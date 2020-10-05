@@ -34,6 +34,8 @@ kotlin {
       }
       test {
          dependencies {
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.3.9")
+            implementation("io.kotest:kotest-framework-api-jvm:4.2.5")
             implementation("io.kotest:kotest-framework-engine-jvm:4.2.5")
          }
       }
