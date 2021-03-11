@@ -1,6 +1,5 @@
 package io.kotest.examples.quarkus
 
-import io.quarkus.test.Mock
 import javax.enterprise.context.ApplicationScoped
 
 data class User(val name: String)
@@ -20,10 +19,4 @@ class UserService(val repository: DefaultRepository)
 @ApplicationScoped
 class MockableService {
    fun greet() = "Hello"
-}
-
-@Mock
-@ApplicationScoped
-class MockedService : MockableService() {
-   override fun greet() = "Welcome"
 }
