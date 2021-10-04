@@ -10,7 +10,7 @@ group = "io.kotest"
 version = "1.0.0"
 
 object Versions {
-   const val kotestVersion = "5.0.0.419-SNAPSHOT"
+   const val kotestVersion = "5.0.0.568-SNAPSHOT"
    const val kotlinxCoroutinesVersion = "1.5.1"
 }
 
@@ -42,7 +42,7 @@ dependencies {
    testImplementation("io.rest-assured:rest-assured")
 
    testImplementation("io.kotest:kotest-framework-api-jvm:${Versions.kotestVersion}")
-   testImplementation("io.kotest:kotest-framework-engine-jvm:${Versions.kotestVersion}")
+   testImplementation("io.kotest:kotest-runner-junit5:${Versions.kotestVersion}")
 }
 
 
